@@ -1,4 +1,4 @@
-package com.delphian.bush.hoover.web.api.coin_api;
+package com.delphian.bush.hoover.web.api;
 
 import com.delphian.bush.hoover.config.feign.FeignResponseDecoderConfig;
 import com.delphian.bush.hoover.dto.coin_api.ExchangeRateResponse;

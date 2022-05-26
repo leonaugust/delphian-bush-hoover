@@ -1,4 +1,4 @@
-package com.delphian.bush.hoover.web.api.crypto_panic;
+package com.delphian.bush.hoover.web.api;
 
 import com.delphian.bush.hoover.config.feign.FeignResponseDecoderConfig;
 import com.delphian.bush.hoover.dto.crypto_panic.CryptoNewsResponse;

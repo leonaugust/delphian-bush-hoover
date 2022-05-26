@@ -4,7 +4,7 @@ import com.delphian.bush.hoover.config.coin_api.CoinApiProperties;
 import com.delphian.bush.hoover.dto.coin_api.ExchangeRate;
 import com.delphian.bush.hoover.dto.coin_api.ExchangeRateResponse;
 import com.delphian.bush.hoover.util.exception.ExceptionMessages;
-import com.delphian.bush.hoover.web.api.coin_api.CoinApi;
+import com.delphian.bush.hoover.web.api.CoinApi;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.event.ApplicationReadyEvent;

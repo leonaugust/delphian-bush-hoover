@@ -3,7 +3,7 @@ package com.delphian.bush.hoover.service.hoover;
 import com.delphian.bush.hoover.dto.crypto_panic.CryptoNews;
 import com.delphian.bush.hoover.dto.crypto_panic.CryptoNewsResponse;
 import com.delphian.bush.hoover.util.exception.ExceptionMessages;
-import com.delphian.bush.hoover.web.api.crypto_panic.CryptoPanicApi;
+import com.delphian.bush.hoover.web.api.CryptoPanicApi;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;

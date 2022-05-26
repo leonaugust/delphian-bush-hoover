@@ -1,7 +1,8 @@
-package com.delphian.bush.hoover.web.api.crypto_panic;
+package com.delphian.bush.hoover.web.api.mock;
 
 import com.delphian.bush.hoover.dto.crypto_panic.CryptoNewsResponse;
 import com.delphian.bush.hoover.util.json.JsonToPojoService;
+import com.delphian.bush.hoover.web.api.CryptoPanicApi;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Profile;

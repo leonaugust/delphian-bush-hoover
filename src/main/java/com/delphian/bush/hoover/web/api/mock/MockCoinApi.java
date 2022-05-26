@@ -1,7 +1,8 @@
-package com.delphian.bush.hoover.web.api.coin_api;
+package com.delphian.bush.hoover.web.api.mock;
 
 import com.delphian.bush.hoover.dto.coin_api.ExchangeRateResponse;
 import com.delphian.bush.hoover.util.json.JsonToPojoService;
+import com.delphian.bush.hoover.web.api.CoinApi;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Profile;
