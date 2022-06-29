@@ -15,3 +15,4 @@ services:
       - 9092:9092                 # Kafka Broker
     volumes:
       - ./connectors/news/crypto-panic-connector-1.0.jar:/connectors/crypto-panic-connector-1.0.jar
+      - ./connectors/exchange-rates/coin-api-connector-1.0.jar:/connectors/coin-api-connector-1.0.jar

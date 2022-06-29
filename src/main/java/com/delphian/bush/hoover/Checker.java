@@ -12,8 +12,8 @@ import java.io.IOException;
 @Slf4j
 public class Checker {
 
-    @KafkaListener(topics = {"news"})
-//    @KafkaListener(topics = {"stats"})
+//    @KafkaListener(topics = {"news"})
+    @KafkaListener(topics = {"stats"})
     public void onMessage(ConsumerRecord<String, String> consumerRecord) throws IOException {
         System.out.println("Received record, value: {" + consumerRecord.value() + "}");
     }
