@@ -3,6 +3,7 @@ version: '2'
 services:
 
   kafka-cluster:
+    container_name: kafka-cluster
     image: landoop/fast-data-dev:latest
     environment:
       ADV_HOST: 127.0.0.1         # Change to 192.168.99.100 if using Docker Toolbox
