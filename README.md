@@ -32,6 +32,6 @@ If you want to raise an issue, please follow the recommendations below:
 
 ## License
 
-Crypto Panic Source Connector is Open Source software released under
+Delphian Bush Hoover is Open Source software released under
 the <a href="https://github.com/leonaugust/delphian-bush-hoover/blob/master/LICENSE" target="_blank">
 MIT license</a>
