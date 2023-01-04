@@ -1,61 +1,37 @@
-Delphian Bush. Hoover.
------------------
-**Launch landoop** 
+# Delphian Bush Hoover.
 
-    docker-compose up -d
+Demonstrates how to run Kafka Connect Source Connectors(CryptoPanic, CoinApi) using docker-compose
+and landoop.
 
-    Open localhost:3030
-    Wait the system to initialize(when 0 connectors shown)
+## Installation
 
----
-**Launch Coin-Api**
-
-Connectors -> New -> CoinApiSourceConnector
-
-Properties:
-
-    name=DelphianBushCoinApiSourceConnector
-    tasks.max=1
-    connector.class=com.delphian.bush.CoinApiSourceConnector
-    topic=exchange-rates
-    application=delphian-bush-coin-api-source-connector
-    coin.api.key=API_KEY
-    profile.active=test
-    poll.timeout=60
-    key.converter=org.apache.kafka.connect.json.JsonConverter
-    value.converter=org.apache.kafka.connect.json.JsonConverter
-    key.converter.schemas.enable=false
-    value.converter.schemas.enable=false
----
-**Launch CryptoPanic**.
-Connectors -> New ->  CryptoPanicSourceConnector
-
-Properties:
-
-    name=CryptoPanicSourceConnector
-    connector.class=com.delphian.bush.CryptoPanicSourceConnector
-    tasks.max=1
-    topic=news
-    application=crypto-panic-source-connector
-    crypto.panic.key=API_KEY
-    profile.active=prod
-    poll.timeout=60
-    key.converter=org.apache.kafka.connect.json.JsonConverter
-    value.converter=org.apache.kafka.connect.json.JsonConverter
-    key.converter.schemas.enable=false
-    value.converter.schemas.enable=false    
+<a href="https://github.com/leonaugust/delphian-bush-hoover/blob/master/INSTALLATION.md" target="_blank">
+Reference documentation</a>
 
 ---
-Cleanup
 
-    docker-compose down --volumes
-----
-Read data from news topic
+## Contribute
 
-    docker exec --interactive --tty kafka-cluster \
-    kafka-console-consumer --bootstrap-server 127.0.0.1:9092 \
-    --topic news \
-    --from-beginning
+<a href="https://github.com/leonaugust/delphian-bush-hoover/blob/master/CONTRIBUTING.md" target="_blank">
+Contribution guidelines</a>
+
 ---
-Known bugs:
-- Landoop shows incorrect number of records in topics.
+
+## Reporting Issues
+
+Delphian Bush Hoover uses GitHub's integrated issue tracking system to record bugs and
+feature requests.
+If you want to raise an issue, please follow the recommendations below:
+
+* Before you log a bug,
+  please <a href="https://github.com/leonaugust/delphian-bush-hoover/issues" target="_blank">
+  search the issue tracker</a> to see if someone has already reported the problem.
+* If the issue doesn't already exist, create a new issue.
+
+---
+
+## License
+
+Crypto Panic Source Connector is Open Source software released under
+the <a href="https://github.com/leonaugust/delphian-bush-hoover/blob/master/LICENSE" target="_blank">
+MIT license</a>
