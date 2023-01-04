@@ -1,6 +1,7 @@
 ## Prerequisites
 
 * Docker-compose installed.
+
 ---
 **Launch landoop**
 
@@ -28,6 +29,7 @@ Properties:
     value.converter=org.apache.kafka.connect.json.JsonConverter
     key.converter.schemas.enable=false
     value.converter.schemas.enable=false
+
 ---
 **Launch CryptoPanic**.
 Connectors -> New ->  CryptoPanicSourceConnector
@@ -51,6 +53,7 @@ Properties:
 Cleanup
 
     docker-compose down --volumes
+
 ----
 Read data from news topic
 
@@ -58,6 +61,8 @@ Read data from news topic
     kafka-console-consumer --bootstrap-server 127.0.0.1:9092 \
     --topic news \
     --from-beginning
+
 ---
 Known bugs:
+
 - Landoop shows incorrect number of records in topics.
